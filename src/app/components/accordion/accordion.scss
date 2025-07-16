@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables.scss";
+
+.accordion {
+  border-bottom: 2px solid $blue-border;
+  padding: 10px 0;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.accordion-body {
+  background-color: $gray-bg-solid;
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .accordion-body {
+    max-height: 500px;
+  }
+}
+
+.text-color {
+  color: $blue-text;
+}

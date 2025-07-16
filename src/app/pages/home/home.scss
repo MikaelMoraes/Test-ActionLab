@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  .shadow-md {
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.15) !important; /* mesma sombra do bootstrap */
+  }
+}
+@media (min-width: 768px) {
+  .vh-max{
+   height: 100vh;
+  }
+}

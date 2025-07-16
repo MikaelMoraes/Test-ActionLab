@@ -1,0 +1,12 @@
+<div class="accordion">
+  <div class="accordion-header" (click)="toggle()">
+    <h4>{{ title }}</h4>
+
+
+    <i class="fa-solid fa-minus text-color" *ngIf="show"></i>
+    <i class="fa-solid fa-plus text-color" *ngIf="!show"></i>
+  </div>
+  <div class="accordion-body" *ngIf="show">
+    <ng-content></ng-content>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+@import '../../../assets/styles/variables.scss';
+.stock-card {
+  background-color: #fff;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 350px;
+  margin: 20px auto; 
+  font-family: "Inter", sans-serif; 
+}
+.date {
+  color: $blue-text; 
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 0.65rem;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.value {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.close-diff-row {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+
+  .label {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .value {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    i {
+      margin-left: 5px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+

@@ -1,0 +1,30 @@
+<div class="stock-card">
+  <div class="date">{{ date }}</div>
+  <div class="row">
+    <div class="col-6">
+      <div class="label">OPEN:</div>
+      <div class="value">R$ {{ openValue.toFixed(4) }}</div>
+    </div>
+    <div class="col-6">
+      <div class="label">HIGH:</div>
+      <div class="value">R$ {{ highValue.toFixed(4) }}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="label">CLOSE:</div>
+      <div class="value">R$ {{ closeValue.toFixed(4) }}</div>
+    </div>
+    <div class="col-6">
+      <div class="label">LOW:</div>
+      <div class="value">R$ {{ lowValue.toFixed(4) }}</div>
+    </div>
+  </div>
+  <div class="close-diff-row">
+    <div class="label">CLOSE DIFF (%):</div>
+    <div class="value" [ngClass]="closeDiffClass">
+      {{ closeDiffPercentage?.toFixed(2) }}%
+      <i [class]="closeDiffIcon"></i>
+    </div>
+  </div>
+</div>
